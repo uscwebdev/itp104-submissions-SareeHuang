@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        #main {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px dotted #000;
+        }
+
+        .form-row {
+			margin: 10px 0px;
+			display: flex;
+		}
+    </style>
+</head>
+<body>
+    <h2>Cat Adoption Interest Form</h2>
+
+    <div id="main">
+
+        <form action="confirmation.html">
+            <div class="form-row">
+                <label for="name-id">Name: </label>
+                <input type="text" id="name-id"> 
+            </div>
+            <!-- single line text field -->
+
+            <div class="form-row">
+                <label>
+                    Your Email: 
+                    <input type="text" name="email" placeholder="sareehua@usc.edu"> 
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    Resident type:
+                    <select name="resident">
+                        <option>Home</option>
+                        <option>Condo/Townhouse</option>
+                        <option>Apartment</option>
+                        <option>Mobile Home</option>
+                    </select>
+                </label>
+            </div>
+            <!-- dropdown -->
+
+            <div class="form-row">
+                Do you have other pets?
+                <label>
+                    <input type="radio" name="pet">
+                    Yes
+                </label>
+                <!-- a separate lable for each radio button -->
+                <label>
+                    <input type="radio" name="pet">
+                    No
+                </label>
+            </div>
+            <!-- radio button -->
+
+            <div class="form-row">
+                Number of cats you want to adopt:
+                <label>
+                    <input type="radio" name="number">
+                    1
+                </label>
+
+                <label>
+                    <input type="radio" name="number">
+                    2
+                </label>
+
+                <label>
+                    <input type="radio" name="number">
+                    3
+                </label>
+            </div>
+            <!-- radio button -->
+
+            <div class="form-row">
+                Type of cat you hope to adopt:
+                <label>
+                    <input type="checkbox" name="personality">
+                    Active
+                </label>
+
+                <label>
+                    <input type="checkbox" name="personality">
+                    Quiet
+                </label>
+
+                <label>
+                    <input type="checkbox" name="personality">
+                    Moderate Energy
+                </label>
+
+                <label>
+                    <input type="checkbox" name="personality">
+                    Good with kids
+                </label>
+
+                <label>
+                    <input type="checkbox" name="personality">
+                    Playful
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Couch Potato
+                </label>
+            </div>
+            <!-- checkbox -->
+
+            <div class="form-row">
+                <label for="requirement-id">Special Requirements: </label>
+                <textarea id="requirement-id"></textarea>
+            </div>
+            <!-- multi-line text box -->
+
+            <div class="row-form">
+                <label>
+                    <input type="checkbox">
+                    I accept terms and conditions.
+                </label>
+            </div>
+            <!-- terms and conditions -->
+
+            <div class="form-row">
+                <button type="submit">Submit</button>
+                <!-- type=> its function -->
+                <button type="reset">Clear</button>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
