@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Breeds Gallery</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(104, 81, 53);
+        }
+
+        .galleryrow {
+            display: flex;
+            /* to display side by side */
+            justify-content: center;
+            align-items: flex-start;
+            /* the default is to stretch; if you want in proportion add this line */
+            flex-wrap: wrap;
+        }
+
+        .vertical {
+            height: 300px;
+            width: auto;
+            margin: 10px;
+            margin-bottom: 0px;
+        }
+
+        .horizontal {
+            width: 450px;
+            height: auto;
+            margin: 10px;
+            margin-bottom: 0px;
+        }
+
+        .img-container > p {
+        /* p with img-container parent */
+			text-align: center;
+			visibility: hidden;
+		}
+
+		img:hover + p {
+			visibility: visible;
+		}
+		 /* they are sibling, select the next sibling paragraph  */
+    </style>
+</head>
+<body>
+    <h1>Cats Breed Gallery</h1>
+
+    <div class="galleryrow">
+        <div class="img-container">
+            <img class="horizontal" src="img/yorkchocolate.jpg" alt="york chocoloate">
+            <p>York Chocoloate</p>
+        </div>
+         <!-- image-->
+
+        <div class="img-container">
+            <img class="vertical" src="img/DevonRex.jpg" alt="devon rex">
+            <p>Devon Rex</p>
+        </div>
+         <!-- image-->
+    </div>
+    <!-- gallery row-->
+
+    <div class="galleryrow">
+        <div class="img-container">
+            <img class="vertical" src="img/germanrex.jpg" alt="german rex">
+            <p>German Rex</p>
+        </div>
+        <!-- image-->
+
+        <div class="img-container">
+            <img class="horizontal" src="img/MaineCoon.jpg" alt="maine coon">
+            <p>Maine Coon</p>
+        </div>
+        <!-- image-->
+    </div>
+    <!-- gallery row-->
+
+    <div class="galleryrow">
+        <div class="img-container">
+            <img class="horizontal" src="img/Abyssinians.jpg" alt="abyssinian">
+            <p>Abyssinian</p>
+        </div>
+        <!-- image-->
+
+        <div class="img-container">
+            <img class="vertical" src="img/HavanaBrown.jpg" alt="Havana Brown">
+            <p>Havana Brown</p>
+        </div>
+        <!-- image-->
+    </div>
+    <!-- gallery row-->
+</body>
+</html>
