@@ -1,0 +1,103 @@
+@font-face {
+    src: url("fonts/From\ Cartoon\ Blocks.ttf");
+    font-family: "cartoon";
+    /* the name to be called */
+}
+
+#header {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    line-height: 400px;
+    font-family: "cartoon", fantasy;
+    font-size: 2em;
+    background-size: cover; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+
+    color: #b0b4cf;
+}
+
+
+body {
+    background-color: #101847; /* Set the background color of the document body */
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color:#12162e;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar ul {
+    list-style: none;
+    /* hide the list icons */
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    z-index: 9999;
+    /*  */
+}
+
+#navbar li {
+    background-color: #101847;
+    list-style: none;
+    /* hide the list icons */
+    text-align: center;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    width: 200px;
+    line-height: 50px;
+    /* to set the height of the block!! */
+}
+
+#navbar a {
+    text-decoration: none;
+    display: block;
+    /* text=> inline property cannot have its height and width adjusted */
+    /* alter its display; it is inline display by default, need to be displayed as a block */
+    height: 50px;
+    width: 200px;
+
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    /* must have a #navbar; compound selector has priority over the more specific selector */
+    /* , means A & B */
+    color: #101847;
+    background-color:#6e7dc8;
+}
+
+#navbar ul {
+    display: none;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 0px; */
+    /* margin-top: 0px; */
+}
+
+#footer {
+    background-color: #12162e;
+    text-align: center;
+    color: #FFF;
+    height: 50px;
+    line-height: 50px;
+}

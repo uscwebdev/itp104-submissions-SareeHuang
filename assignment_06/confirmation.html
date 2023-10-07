@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Train your Dragon | Gallery</title>
+    <link rel="stylesheet" href="main.css"> <!-- no closing link -->
+
+    <style>
+        #header {
+            background-image: url("img/gallerybackground.jpg");
+            height: 400px;
+            text-align: center;
+            line-height: 500px;
+        }
+
+        #container {
+            width: 800px;
+            padding-top: 20px;
+            background-color: #b0b4cf;
+            justify-content: center;
+        }
+
+        img {
+			width: 100%;
+			height: auto;
+		}
+
+        #img_container{
+            position: relative;
+            /* by itself harmless, allows */
+            box-sizing: border-box;
+            overflow: hidden;
+			position: relative;
+        }
+
+        .overlay {
+			position: absolute;
+            top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+            width: 100%;
+            height: 100%;
+
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+            padding-top: 45px;
+
+			visibility: hidden;
+		} 
+
+        .overlay2 {
+			position: absolute;
+            top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+            width: 100%;
+            height: 100%;
+
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+            padding-top: 90px;
+
+			visibility: hidden;
+		} 
+
+        .img_container:hover > .overlay {
+			visibility: visible;
+		}
+
+        .img_container:hover > .overlay2 {
+			visibility: visible;
+		}
+
+        #row1 {
+            background-color: grey;
+            margin: 20px;
+            margin-top: 0px;
+            width: 758px;
+            /* width= 800-2*10-1*2-20*2 */
+            height: 100px;
+            border: 1px solid black;
+            overflow: hidden;
+			position: relative;
+        }
+
+        #row2 {
+            display: flex;
+            margin: 20px;
+        }
+
+        .row2_12 {
+            background-color: grey;
+            width: 178px;
+            /* width= (800/2-4*10)/2-2*1 =178px*/
+            height: 200px;
+            border: 1px solid black;
+            margin-right: 20px;
+            overflow: hidden;
+			position: relative;
+        }
+
+        #row2_3 {
+            background-color: grey;
+            width: 378px;
+            /* width= 800/2-2*10-1*2=378 */
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+			position: relative;
+        }
+
+        #row3 {
+            display: flex;
+            margin: 20px;
+            margin-top: 0px;
+        }
+
+        #row3_1 {
+            background-color: grey;
+            width: 378px;
+            /* width= 800/2-2*10-1*2=378 */
+            height: 100px;
+            border: 1px solid black;
+            overflow: hidden;
+			position: relative;
+        }
+
+        .row3_23 {
+            background-color: grey;
+            height: 100px;
+            width: 178px;
+            /* width= (800/2-4*10)/2-2*1 =178px*/
+            border: 1px solid black;
+            margin-left: 20px;
+            overflow: hidden;
+			position: relative;
+        }
+
+        #row4 {
+            display: flex;
+            margin-top: 0px;
+            margin: 20px;
+        }
+
+        .row4_12 {
+            background-color: gray;
+            height: 100px;
+            width: 245.33px;
+            /* (800-10*6-6*1)/3=736/3=245.33
+            245.33-40/3 */
+            border: 1px solid black;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+			position: relative;
+        }
+
+        #row4_3 {
+            background-color: gray;
+            height: 100px;
+            width: 245.33px;
+            /* (800-10*6-6*1)/3=736/3=245.33
+            245.33-40/3 */
+            border: 1px solid black;
+            margin-bottom: 20px;
+            overflow: hidden;
+			position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Gallery</h1>
+    </div>
+    <!-- #header -->
+
+    <ul id="navbar">
+        <!-- creates a hook on the page, the web knows where the id is -->
+        <li id="highlight-nav">
+            <strong>Home</strong>
+            <ul id="Home_dropdown">
+                <li><a href="assignment_06.htm#intro">Introduction</a></li>
+                <li><a href="assignment_06.htm#production">The Production</a></li>
+                <li><a href="assignment_06.htm#voicecasting">Voice Casting</a></li>
+            </ul>
+        </li>
+        <li><a href="confirmation.html"><strong>Gallery</strong></a></li>
+    </ul>
+    <!-- #navbar -->
+
+    <div id="container">
+        <div id="row1">
+            <div class="img_container">
+                <img src="img/gallery5.jpg" alt="Hiccup with Toothless">
+                <div class="overlay">Hiccup with Toothless</div>
+                <!-- <div>Hiccup with Toothless</div> -->
+            </div>
+        </div>
+        <!-- #row1 -->
+
+        <div id="row3">
+            <div id="row3_1">
+                <div class="img_container">
+                    <img src="img/gallery2.jpg" alt="Toothless">
+                    <div class="overlay">Toothless</div>
+                    <!-- <div>Toothless</div> -->
+                </div>
+            </div>
+            <div class="row3_23">
+                <div class="img_container">
+                    <img src="img/gallery1.jpg" alt="Toothless and The Light Furry">
+                    <div class="overlay">Toothless and The Light Furry</div>
+                </div>
+                <!-- <div>Toothless and The Light Furry</div> -->
+            </div>
+                <div class="row3_23">
+                    <div class="img_container">
+                        <img src="img/gallery4.jpg" alt="Hiccup, Astrid, Toothless, and The Light Furry">
+                        <div class="overlay">Hiccup, Astrid, Toothless, and The Light Furry</div>
+                    </div>
+                </div>
+                <!-- <div>Hiccup, Astrid, Toothless, and The Light Furry</div> -->
+        </div>
+        <!-- #row2 -->
+
+        <div id="row2">
+            <div class="row2_12">
+                <div class="img_container">
+                    <img src="img/gallery8.jpg" alt="Toothless and Hiccup and everyone">
+                    <div class="overlay2">Toothless and Hiccup and Everyone</div>
+                </div>
+            <!-- <div class>Toothless and Hiccup and Everyone</div> -->
+            </div>
+            <div class="row2_12">
+                <div class="img_container">
+                    <img src="img/gallery3.jpg" alt="Toothless and Hiccup">
+                    <!-- <div>Toothless and Hiccup</div> -->
+                     <div class="overlay2">Toothless and Hiccup</div>
+                </div>
+            </div>
+    
+            <div id="row2_3">
+                <div class="img_container">
+                    <img src="img/gallery10.jpg" alt="toothless family">
+                    <div class="overlay2">Toothless Family</div>
+                    <!-- <div>Toothless Family</div> -->
+                </div>
+            </div>
+        </div>
+        <!-- #row3 -->
+
+        <div id="row4">
+            <div class="row4_12">
+                <div class="img_container">
+                    <img src="img/gallery7.jpg" alt="Astrid and Hiccup">
+                    <div class="overlay">Astrid and Hiccup</div>
+                    <!-- <div>Astrid and Hiccup</div> -->
+                </div>
+            </div>
+            <div class="row4_12">
+                <div class="img_container">
+                    <img src="img/gallery9.jpg" alt="Hiccup and Toothless">
+                    <div class="overlay">Hiccup and Toothless</div>
+                    <!-- <div>Hiccup and Toothless</div> -->
+                </div>
+            </div>
+            <div id="row4_3">
+                <div class="img_container">
+                    <img src="img/gallery6.jpg" alt="Toothless">
+                    <div class="overlay">Toothless</div>
+                    <!-- <div>Toothless</div> -->
+                </div>
+            </div>
+        </div>
+        <!-- #row4 -->
+    </div>
+    <!-- #container -->
+
+    <div id="footer">
+		Saree Huang &copy; 2023
+	</div>
+    <!-- footer -->
+</body>
+</html>
+
+
