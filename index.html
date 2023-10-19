@@ -3,6 +3,8 @@
 <head>
     <title>Saree Huang | Student Page</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style> 
         strong{
             background-color: pink;
@@ -39,6 +41,37 @@
             margin-top: 10px;
             margin-left: 128px;
         }
+
+        @media (max-width:767px){
+            body{
+				padding-top: 0px;
+            }
+
+            #container {
+                width: 100%; /* Change to a percentage-based width */
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+			#second {
+                flex-direction: column;
+                width: auto;
+            }
+
+            #third {
+                flex-direction: column;
+                width: auto;
+            }
+
+            #left2 {
+                margin-left: 0px;
+            }
+
+            #right2 {
+                margin-top: 10px;
+                margin-left: 0px;
+            }
+		}
     </style>
 
 </head>
