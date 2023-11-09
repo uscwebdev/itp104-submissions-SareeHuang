@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab10</title>
+
+    <style>
+        img{
+            margin-left: 200px;
+            margin-top: 200px;
+            height: 300px;
+            width: auto;
+            position: absolute;
+        }
+
+        #first {
+            position: absolute;
+            transition: all 1s;
+        }
+
+        #second {
+            position: absolute;
+            transform: rotate(5deg);
+            transition: all 1s;
+            /* to make the obscure gradual */
+        }
+
+        #third {
+            position: absolute;
+            transform: rotate(10deg);
+            transition: all 1s;
+        }
+
+        #img_container:hover #third{
+            transition: all 1s;
+            transform: scale(1.2) rotate(0deg) ;
+        }
+
+        #img_container:hover #second{
+            transition: all 1s;
+            transform: scale(1.2) rotate(15deg) translate(100px, 10px);
+        }
+
+        #img_container:hover #first{
+            transition: all 1s;
+            transform: scale(1.2) rotate(30deg) translate(200px, 25px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="img_container">
+        <img id="first" src="img/3.jpg" alt="image 3"> 
+        <img id="second" src="img/2.jpg" alt="image 2">
+        <!-- the top -->
+        <img id="third" src="img/1.jpg" alt="image 1">
+    </div>
+</body>
+</html>
