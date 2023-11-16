@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Letter Poster Puzzle</title>
+
+    <style>
+        body {
+            background-color: rgb(157, 183, 232);
+        }
+        h1 {
+            text-align: center;
+            color: rgb(236, 132, 53);
+            font-size: 3em;
+        }
+
+        #allimages {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #allimages > img{
+            width: 200px;
+            height: auto;
+        }
+
+        #puzzle_effect1 {
+            position: relative;
+            left: -20px;
+            top: 20px;
+            box-shadow: 5px 5px 5px rgb(236, 132, 53);
+            /* 2=> x & y offset; 3=> x & y offset, blur radius; 4=> x & y offset, blur radius, spread radius*/
+        }
+
+        #puzzle_effect2 {
+            position: relative;
+            left: 30px;
+            top: -30px;
+            box-shadow: 5px 5px 5px rgb(236, 132, 53);
+        }
+
+        #puzzle_effect3 {
+            position: relative;
+            left: -30px;
+            bottom: 30px;
+            box-shadow: 5px 5px 5px rgb(236, 132, 53);
+        }
+    </style>
+</head>
+<body>
+    <h1>Love Letter Poster Puzzle</h1>
+
+    <div id="allimages">
+        <img src="img/row-1-column-1.jpg" alt="row1column1">
+        <img src="img/row-1-column-2.jpg" alt="row1column2">
+        <img id="puzzle_effect1" src="img/row-1-column-3.jpg" alt="row1column3">
+        <img id="puzzle_effect2" src="img/row-2-column-1.jpg" alt="row2column1">
+        <img src="img/row-2-column-2.jpg" alt="row2column2">
+        <img src="img/row-2-column-3.jpg" alt="row2column3">
+        <img src="img/row-3-column-1.jpg" alt="row3column1">
+        <img src="img/row-3-column-2.jpg" alt="row3column2">
+        <img id="puzzle_effect3" src="img/row-3-column-3.jpg" alt="row3column3">
+    </div>
+    <!-- #allimages -->
+
+    <!-- load the jquery first -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="draggabilly/draggabilly.pkgd.min.js"></script>
+
+    <script>
+        // var $draggable = $('.draggable').draggabilly('#allimages > img');
+
+        // only one image moves
+        // $(document).ready(function() {
+        //     // Initialize Draggabilly on all elements #allimages > img
+        //     var draggie = new Draggabilly('#allimages > img');
+        // });
+
+        $(document).ready(function() {
+            // Select all elements '#allimages > img'
+            var $draggableImages = $('#allimages > img');
+
+            // Loop through each image and make it draggable
+            $draggableImages.each(function(index, element) {
+                var draggie = new Draggabilly(element);
+            });
+        });
+
+        // var $draggable = $('.draggable').draggabilly({
+        //     // options...
+        // })
+
+        // $draggable.draggabilly('enable');
+
+        // $draggable.on( 'dragMove', function( event, pointer, moveVector) {});
+
+    </script>
+</body>
+</html>
