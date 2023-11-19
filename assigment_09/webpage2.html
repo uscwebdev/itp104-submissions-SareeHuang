@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bath, England</title>
+
+    <meta name="description" content="ITP 104 Final Project Bath page about Saree Huang's journey in Bath.">
+
+    <link rel="stylesheet" href="main.css"> <!-- no closing link -->
+
+    <style>
+        #header {
+            background-image: url("img/IMG_0680.PNG");
+            color: whitesmoke;
+            position: relative;
+        }
+
+        #header_text {
+            text-align: center;
+            font-size: 2em;
+            position: absolute;
+            top: 30%;
+            left: 34%;
+        }
+
+        #name {
+            color: #8bbed9;
+        }
+
+        #name a:hover {
+            color: #8bbed9;
+        }
+
+        
+        #gallery {
+            margin-top: 150px;
+        }
+
+        .galleryrow {
+            display: flex;
+            /* to display side by side */
+            justify-content: center;
+            align-items: flex-start;
+            /* the default is to stretch; if you want in proportion add this line */
+            flex-wrap: wrap;
+        }
+
+        .image {
+            height: 600px;
+            width: auto;
+        }
+
+        .image2 {
+            margin-left: 35px;
+            height: 600px;
+            width: auto;
+        }
+
+        .img-container > p {
+        /* p with img-container parent */
+            font-family: "reg";
+            margin-top: 10px;
+            color: black; 
+            /* color: #8bbed9; */
+			text-align: center;
+			visibility: hidden;
+		}
+
+		img:hover + p {
+			visibility: visible;
+		}
+
+        #icons {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #icons .ii {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+	
+        #footer {
+            background-image: url("img/IMG_0680.PNG");
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="header_text">
+            <h1>Bath, England</h1>
+            <h2>51.3781° N, 2.3597° W</h2>
+        </div>
+        <!-- #header_text -->
+        <p id="name"><a href="../assignment_08/assignment_08.html">SAREE HUANG</a></p>
+        <div id="nav">
+            <ul id="top-menu">
+                <li>
+                    <a href="">CHAPTERS</a>
+                    <ul id="submenu">
+                        <li><a href="webpage2.html">Bath</a></li>
+                        <li><a href="">Edinburgh</a></li>
+                        <li><a href="">Hawaii</a></li>
+                    </ul>
+                    <!-- #submenu -->
+                </li>
+                <li><a href="">CONTACT</a></li>            
+            </ul> 
+            <!-- #top-menu -->
+        </div>
+        <!-- #nav -->
+    </div>
+    <!-- #header -->
+
+    <div id="gallery">
+        <div class="galleryrow">
+            <div class="img-container">
+                <img class="image" src="img/1.JPG" alt="The Royal Crescent">
+                <p>The Royal Crescent</p>
+            </div>
+
+            <div class="img-container">
+                <img class="image2" src="img/2.JPG" alt="Pultney Bridge">
+                <p>Pultney Bridget</p>
+            </div>
+
+            <div class="img-container">
+                <img class="image2" src="img/3.JPG" alt="Bath in the Night">
+                <p>Bath in the Night</p>
+            </div>
+        </div>
+        <!-- #galleryrow -->
+
+        <div class="galleryrow">
+            <div class="img-container">
+                <img class="image" src="img/4.JPG" alt="Interior of the Royal Crescent">
+                <p>Interior design of the Royal Crescent</p>
+            </div>
+
+            <div class="img-container">
+                <img class="image2" src="img/5.JPG" alt="The wall of the Bath Abbey">
+                <p>The wall of the Bath Abbey</p>
+            </div>
+
+            <div class="img-container">
+                <img class="image2" src="img/6.JPG" alt="The ceiling of the Bath Abbey">
+                <p>The ceiling of the Bath Abbey</p>
+            </div>
+        </div>
+        <!-- #galleryrow -->
+    </div>
+     <!-- #gallery-->
+
+     <div id="icons">
+        <img class="ii" src="img/icons8-ocean-50.png" alt="ocean icon">
+        <img class="ii" src="img/icons8-cat.gif" alt="cat icon">
+        <img class="ii" src="img/icons8-sunset.gif" alt="sunset icon">
+    </div>
+
+    <div id="footer">
+		Saree Huang &copy; 2023
+	</div>
+</body>
+</html>

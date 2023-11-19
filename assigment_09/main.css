@@ -1,0 +1,108 @@
+@font-face {
+    src: url('font/TitilliumWeb-Regular.ttf');
+    font-family: 'reg';
+    /* font name to be used throughout this file */
+}
+
+@font-face {
+    src: url('font/Love\ Letters.ttf');
+    font-family: 'love';
+    /* font name to be used throughout this file */
+}
+
+#header {
+    height: 700px;
+    background-size: cover;
+    font-family: "reg";
+}
+
+a {
+    text-decoration: none;
+    /* remove the underline */
+    color: inherit; 
+    /* keep the original color */
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+#name {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    font-size: 1.2em;
+}
+
+#nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav a:hover{
+    border: 2px solid whitesmoke;
+}
+
+#nav li {
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+#nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 120px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#nav li:hover > ul {
+    display: block;
+}
+
+#nav {
+    float: right;
+    margin-top: -35px;
+    z-index: 1;
+}
+
+#icons {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icons .ii {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#footer {
+    background-size: cover;
+    font-family: "reg";
+    color: whitesmoke;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
