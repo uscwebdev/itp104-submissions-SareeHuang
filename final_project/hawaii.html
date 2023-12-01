@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hawaii, United States</title>
+
+    <meta name="description" content="ITP 104 Final Project Hawaii page about Saree Huang's journey in Hawaii.">
+
+    <link rel="stylesheet" type="text/css" href="../assigment_09/main.css"> <!-- no closing link -->
+
+    <style>
+        .horizontal {
+            width: 550px;
+            height: auto;
+            
+        }
+
+        #horizontal1 {
+            width: 550px;
+            height: auto;
+            margin-left: 40px;
+        }
+
+        .vertical {
+            height: 550px;
+            width: auto;
+        }
+
+        #vertical1 {
+            height: 550px;
+            width: auto;
+            margin-left: 40px;
+        }
+
+        #header {
+            background-image: url("img/hawaii\ background.jpg");
+            color: whitesmoke;
+            position: relative;
+        }
+
+        #header_text {
+            text-align: center;
+            font-size: 2em;
+            position: absolute;
+            top: 30%;
+            left: 34%;
+        }
+        
+        .gallery {
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+
+        #header + .gallery{
+            margin-top: 150px;
+        }
+
+        img {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .wow {
+            font-family: "reg";
+            margin-bottom: -20px;
+            color:rgb(32, 32, 115);
+        }
+
+        #iframe1 {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        iframe {
+			width: 70%;
+			height: 500px;
+			border: none;
+		}
+
+        #footer {
+            background-image: url("img/hawaii\ background.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="header_text">
+            <h1>Hawaii, United States</h1>
+            <h2>19.8987° N, 155.6659° W</h2>
+        </div>
+        <!-- #header_text -->
+        <p id="name"><a href="../assignment_08/assignment_08.html">SAREE HUANG</a></p>
+        <div id="nav">
+            <ul id="top-menu">
+                <li>
+                    <a>CHAPTERS</a>
+                    <ul id="submenu">
+                        <li><a href="../assigment_09/webpage2.html">Bath</a></li>
+                        <li><a href="finalproject.html">Edinburgh</a></li>
+                        <li><a href="hawaii.html">Hawaii</a></li>
+                    </ul>
+                    <!-- #submenu -->
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>            
+            </ul> 
+            <!-- #top-menu -->
+        </div>
+        <!-- #nav -->
+    </div>
+    <!-- #header -->
+
+    <div class="gallery">
+        <h2 class="wow">Hawaii Photo Gallery</h2>
+    </div>
+
+    <div class="gallery">
+            <img class="vertical" src="img/hawaii1.JPG" alt="hawaii bird">
+            <img id="horizontal1" src="img/hawaii3.jpg" alt="kihei island">
+    </div>
+
+    <div class="gallery">
+        <img class="horizontal" src="img/hawaii4.jpg" alt="Diamond Head">
+        <img id="vertical1" src="img/hawaii2.JPG" alt="Honululu">
+    </div>
+     <!-- #gallery-->
+
+     <div class="gallery">
+        <p class="wow">Hawaii is an island state in the Western United States, about 2,000 miles from the U.S. mainland in the Pacific Ocean. It is the only U.S. state outside North America, the only one which is an archipelago, and the only one in the tropics. Hawaii consists of 137 volcanic islands that comprise almost the entire Hawaiian archipelago (the exception, which is outside the state, is Midway Atoll). Spanning 1,500 miles (2,400 km), the state is physiographically and ethnologically part of the Polynesian subregion of Oceania. Hawaii's ocean coastline is consequently the fourth-longest in the U.S., at about 750 miles (1,210 km). </p>
+     </div>
+
+     <div id="iframe1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0XoT1z-gAQw?si=7CSwyyPVs6rVuVqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+     <div id="icons">
+        <img class="ii" src="img/icons8-ocean-50.png" alt="ocean icon">
+        <img class="ii" src="img/icons8-cat.gif" alt="cat icon">
+        <img class="ii" src="img/icons8-sunset.gif" alt="sunset icon">
+    </div>
+
+    <div id="footer">
+		Saree Huang &copy; 2023
+	</div>
+</body>
+</html>

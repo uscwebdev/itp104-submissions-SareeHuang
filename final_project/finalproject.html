@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edinburgh, Scotland</title>
+
+    <meta name="description" content="ITP 104 Final Project Edinburgh page about Saree Huang's journey in Edinburgh.">
+
+    <link rel="stylesheet" href="../assigment_09/main.css"> <!-- no closing link -->
+
+    <style>
+        #header {
+            background-image: url("img/2.jpg");
+            color: whitesmoke;
+            position: relative;
+        }
+
+        #header_text {
+            text-align: center;
+            font-size: 2em;
+            position: absolute;
+            top: 30%;
+            left: 34%;
+        }
+
+        #header_text h2 {
+            color: whitesmoke;
+            font-size: 1em;
+        }
+        
+        #gallery {
+            margin-top: 150px;
+        }
+
+        img {
+            width: 550px;
+            height: auto;
+        }
+
+        .left {
+            display: flex;
+            /* to display side by side */
+            justify-content: center;
+            align-items: flex-start;
+            /* the default is to stretch; if you want in proportion add this line */
+            flex-wrap: wrap;
+        }
+
+        .right {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            /* to display side by side */
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .img-container + div{
+            margin-left: 20px;
+            font-family: "reg";
+            margin-top: 10px;
+            color: rgb(38, 13, 13); 
+			/* text-align: center; */
+		}
+
+        .right > div {
+            margin-right: 20px;
+            font-family: "reg";
+            margin-top: 10px;
+            color: rgb(38, 13, 13)ck; 
+			/* text-align: center; */
+        }
+
+        /* #white {
+            color: whitesmoke;
+        } */
+
+        h2 {
+            font-size: 2em;
+            color: #4a4761;
+            /* color: white; */
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #4a4761;
+        }
+
+        .text {
+            width: 400px;
+        }
+
+        #footer {
+            background-image: url("img/2.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="header_text">
+            <h1>Edinburgh, Scotland</h1>
+            <h2>55.9533° N, 3.1883° W</h2>
+        </div>
+        <!-- #header_text -->
+        <p id="name"><a href="../assignment_08/assignment_08.html">SAREE HUANG</a></p>
+        <div id="nav">
+            <ul id="top-menu">
+                <li>
+                    <a>CHAPTERS</a>
+                    <ul id="submenu">
+                        <li><a href="../assigment_09/webpage2.html">Bath</a></li>
+                        <li><a href="finalproject.html">Edinburgh</a></li>
+                        <li><a href="hawaii.html">Hawaii</a></li>
+                    </ul>
+                    <!-- #submenu -->
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>            
+            </ul> 
+            <!-- #top-menu -->
+        </div>
+        <!-- #nav -->
+    </div>
+    <!-- #header -->
+
+    <div id="gallery">
+
+        <div class="left">
+            <div class="img-container">
+                <img src="img/4.JPG" alt="Edinburgh City">
+            </div>
+            <div class="captions">
+                <h2>Edinburgh City</h2>
+                <div class="text">
+                    <p>Edinburgh is Scotland's compact, hilly capital. It has a medieval Old Town and elegant Georgian New Town with gardens and neoclassical buildings. </p>
+                </div>
+            </div>
+        </div>
+        <!-- #galleryrow -->
+
+        <div class="right">
+            <div class="captions">
+                <h2>Calton Hill</h2>
+                <div class="text">
+                    <p>Calton Hill is a volcanic hill rising beyond the eastern end of Princes Street. The hill boasts a collection of some of Edinburgh's most important monuments and offers fantastic panoramic views of the city. In the 19th century, Edinburgh was envisioned as the 'Athens of the North' and Calton Hill was considered Edinburgh's version of the Athenian Acropolis, complete with classical revival architecture.</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="img/1.JPG" alt="Calton Hill ">
+            </div>
+        </div>
+        <!-- #galleryrow -->
+
+        <div class="left">
+            <div class="img-container">
+                <img src="img/3.JPG" alt="Edinburgh Castle">
+            </div>
+            <div class="captions">
+                <h2>Edinburgh Castle</h2>
+                <div class="text">
+                    <p>Edinburgh Castle is a historic castle in Edinburgh, Scotland. It stands on Castle Rock, which has been occupied by humans since at least the Iron Age, although the nature of the early settlement is unclear. Edinburgh Castle was home to Scotland's crown jewels and the Stone of Destiny, which were used in the coronation of Scottish rulers.</p>
+                </div>
+            </div>
+        </div>
+        <!-- #galleryrow -->
+    </div>
+     <!-- #gallery-->
+
+     <div id="icons">
+        <img class="ii" src="img/icons8-ocean-50.png" alt="ocean icon">
+        <img class="ii" src="img/icons8-cat.gif" alt="cat icon">
+        <img class="ii" src="img/icons8-sunset.gif" alt="sunset icon">
+    </div>
+
+    <div id="footer">
+		Saree Huang &copy; 2023
+	</div>
+</body>
+</html>

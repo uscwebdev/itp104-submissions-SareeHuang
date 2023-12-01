@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Contact Me</title>
+
+    <meta name="description" content="ITP 104 Final Project contact me page.">
+
+    <link rel="stylesheet" type="text/css" href="../assigment_09/main.css"> <!-- no closing link -->
+
+    <style>
+
+        #header {
+            background-image: url("img/confirmation.jpg");
+            color:rgb(32, 32, 115);
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+            color:rgb(90, 90, 181);
+        }
+
+        #main {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px dotted rgb(90, 90, 181);;
+        }
+
+        .form-row {
+            font-family: "reg";
+			margin: 10px 0px;
+			display: flex;
+            color:rgb(90, 90, 181);
+		}
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <p id="name"><a href="../assignment_08/assignment_08.html">SAREE HUANG</a></p>
+        <div id="nav">
+            <ul id="top-menu">
+                <li>
+                    <a>CHAPTERS</a>
+                    <ul id="submenu">
+                        <li><a href="../assigment_09/webpage2.html">Bath</a></li>
+                        <li><a href="../final_project/finalproject.html">Edinburgh</a></li>
+                        <li><a href="../final_project/hawaii.html">Hawaii</a></li>
+                    </ul>
+                    <!-- #submenu -->
+                </li>
+                <li><a href="../final_project/contact.html">CONTACT</a></li>            
+            </ul> 
+            <!-- #top-menu -->
+        </div>
+        <!-- #nav -->
+    </div>
+
+    <h2>Talk to Me!</h2>
+
+    <div id="main">
+        <form action="confirmation.html">
+            <div class="form-row">
+                <label>
+                    Name: 
+                    <input type="text" id="name-id"> 
+                </label>
+            </div>
+            <!-- single line text field -->
+    
+            <div class="form-row">
+                <label>
+                    Your Email: 
+                    <input type="text" name="email" placeholder="sareehua@usc.edu"> 
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>Subject: 
+                    <input type="text" id="subject"> 
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label for="requirement-id">Message: </label>
+            </div>
+
+            <div class="form-row">
+                <textarea id="requirement-id"></textarea>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Submit</button>
+                <!-- type=> its function -->
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+    
+
+</body>
+</html>
+

@@ -32,6 +32,11 @@ a:hover {
     left: 30px;
     top: 20px;
     font-size: 1.2em;
+    color: whitesmoke;
+}
+
+#name a:hover {
+    color: whitesmoke;
 }
 
 #nav ul{
